@@ -153,8 +153,8 @@ public class SpecialAnimationThreeViewController: UIViewController {
             
             containerView.snp.makeConstraints { make in
                 make.center.equalToSuperview()
-                make.height.equalTo(627)
-                make.width.equalTo(400)
+                make.height.equalTo(727)
+                make.width.equalTo(500)
             }
         } else {
             view.addSubview(topImageView)
