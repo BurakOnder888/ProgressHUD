@@ -14,7 +14,7 @@ public class SpecialAnimationThreeViewController: UIViewController {
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 34 : isVerySmallDevice ? 22 : 30, weight: .bold)
+        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 42 : isVerySmallDevice ? 22 : 30, weight: .bold)
         label.textColor = .white
         label.textAlignment = .center
         return label
@@ -22,7 +22,7 @@ public class SpecialAnimationThreeViewController: UIViewController {
     
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 24 : isVerySmallDevice ? 16 : 22, weight: .regular)
+        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 32 : isVerySmallDevice ? 16 : 22, weight: .regular)
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -32,7 +32,7 @@ public class SpecialAnimationThreeViewController: UIViewController {
     private lazy var linesLabel: UILabel = {
         let label = UILabel()
         label.text = (model?.objectTwo?.description.items_title ?? "") + createText()
-        label.font = .systemFont(ofSize: isVerySmallDevice ? 16 : 18, weight: .medium)
+        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 24 : isVerySmallDevice ? 16 : 18, weight: .medium)
         label.numberOfLines = 0
         label.textColor = .white
         return label
@@ -46,7 +46,7 @@ public class SpecialAnimationThreeViewController: UIViewController {
     
     private lazy var lowLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: isVerySmallDevice ? 14 : 18, weight: .medium)
+        label.font = .systemFont(ofSize: UIDevice.current.userInterfaceIdiom == .pad ? 20 : isVerySmallDevice ? 14 : 18, weight: .medium)
         label.textColor = .white
         label.textAlignment = .left
         label.numberOfLines = 0
